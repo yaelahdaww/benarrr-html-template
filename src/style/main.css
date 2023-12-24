@@ -444,6 +444,28 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: "ClashDisplay-Variable";
+
+  src: url("../../public/font/ClashDisplay-Variable.woff2") format("woff2"),
+      url("../../public/font/ClashDisplay-Variable.woff") format("woff"),
+      url("../../public/font/ClashDisplay-Variable.ttf") format("truetype");
+
+  font-weight: 200 700;
+
+  font-display: swap;
+
+  font-style: normal;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "ClashDisplay-Variable";
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;

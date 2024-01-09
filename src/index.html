@@ -10,11 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="./style/main.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Ini Navbar -->
     <nav
+      data-aos="fade-down"
       class="max-w-6xl mx-auto flex flex-row justify-between items-center mt-10"
     >
       <img src="../public/img/logo.svg" alt="" />
@@ -97,6 +99,7 @@
       class="max-w-6xl mx-auto flex lg:flex-row flex-col items-center justify-between mt-[70px]"
     >
       <div
+        data-aos="fade-right"
         class="hero-info flex flex-col items-center lg:items-start gap-y-8 lg:order-1 order-2"
       >
         <div
@@ -141,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div class="hero-image lg:order-2 order-1 mb-8">
+      <div data-aos="fade-left" class="hero-image lg:order-2 order-1 mb-8">
         <img
           src="../public/img/hero_illustrations.png"
           class="w-[510px] h-[560px]"
@@ -152,7 +155,7 @@
     <!-- Ini Akhir Hero -->
 
     <!-- Ini Brands -->
-    <section class="brands flex flex-col gap-y-8 mt-14">
+    <section data-aos="fade-up" class="brands flex flex-col gap-y-8 mt-14">
       <h2 class="text-xl text-center font-semibold text-indigo-950">
         Over <span class="font-bold text-violet-800">280,000</span> big
         companies<br />
@@ -185,20 +188,26 @@
     <!-- Ini Akhir Brands -->
 
     <!-- Ini Features -->
-    <div class="wrapper mt-14 p-20 bg-[#EDEEF2]">
-      <section class="features max-w-6xl mx-auto flex lg:items-start items-center flex-col gap-y-8 mt-14">
+    <div data-aos="fade-up-left" class="wrapper mt-14 p-20 bg-[#EDEEF2]">
+      <section
+        class="features max-w-6xl mx-auto flex lg:items-start items-center flex-col gap-y-8 mt-14"
+      >
         <div
           class="info font-bold text-white text-sm rounded-full bg-violet-800 py-3 px-5 w-fit"
         >
           Top Features
         </div>
 
-        <h2 class="font-bold lg:text-start text-center text-indigo-950 text-4xl">
+        <h2
+          class="font-bold lg:text-start text-center text-indigo-950 text-4xl"
+        >
           Built-in Robust Features<br class="hidden lg:block" />
           Versatile Purposes
         </h2>
 
-        <div class="card-wrapper grid lg:grid-cols-6 grid-cols-1 gap-x-8 items-center">
+        <div
+          class="card-wrapper grid lg:grid-cols-6 grid-cols-1 gap-x-8 items-center"
+        >
           <div class="card p-8 col-span-2 bg-white rounded-2xl mb-8">
             <img src="../public/img/icon-features-1.svg" class="mb-10" alt="" />
             <div class="flex flex-col gap-y-3">
@@ -255,6 +264,25 @@
     </div>
     <!-- Ini Akhir Features -->
 
+    <!-- Ini Showcase -->
+    <section class="max-w-6xl mx-auto flex flex-col mt-24 justify-between">
+      <div class="flex flex-col gap-y-4">
+        <div class="main-image flex flex-col">
+          <img src="../public/img/background.svg" class="absolute" alt="" />
+          <img
+            src="../public/img/img-1.png"
+            class="relative w-[510px] h-[450px] rounded-3xl left-4 bottom-4 hover:border-4 border-black transition transform duration-300 ease-in-out"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Ini AKhir Showcase -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
